@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class chunk:
+class Chunk:
     content:str
     metadata:dict
 
