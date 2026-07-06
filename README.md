@@ -26,6 +26,35 @@ personalized-rag/
 ├── main.py
 └── requirements.txt
 ```
+## 🛠 Design of the chunking algorithm
+
+Take the first sentence.
+
+↓
+
+Create the first chunk.
+
+↓
+
+For every remaining sentence:
+
+    Compute its embedding.
+
+    Compare it to the current chunk centroid.
+
+    If similarity is high:
+        Add the sentence.
+        Update the centroid.
+
+    Otherwise:
+        Save the current chunk.
+        Create a new chunk.
+
+↓
+
+Return every chunk.
+
+
 
 ## 🛠 Current Progress
 
